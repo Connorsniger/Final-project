@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+{% block body %}
+{%for i in range(12)%}
+<h1>{{names[i]}}</h1>
+{%for n in range(length[i])%}
+{%if holidays[(i+1,n+1)]%}
+{{holidays[(i+1,n+1)] }}
+{%endif%}
+
+ 
+
+<form action="/action_page.php">
+{{n+1}} <input type="text" name="1" value="">
+<!--2. <input type="text" name="2" value="">
+3. <input type="text" name="3" value="">
+4. <input type="text" name="4" value="">
+5. <input type="text" name="5" value="">
+6. <input type="text" name="6" value=""><br>
+7.<input type="text" name="7" value="">
+8.<input type="text" name="8" value="">
+9.<input type="text" name="9" value="">
+10.<input type="text" name="10" value="">
+11.<input type="text" name="11" value="">
+12.<input type="text" name="12" value=""><br>
+13.<input type="text" name="13" value="">
+14.<input type="text" name="14" value="">
+15.<input type="text" name="14" value="">
+16.<input type="text" name="14" value="">
+17.<input type="text" name="14" value="">
+18.<input type="text" name="14" value=""><br>
+19.<input type="text" name="14" value="">
+20.<input type="text" name="14" value="">
+21.<input type="text" name="14" value="">
+22.<input type="text" name="14" value="">
+23.<input type="text" name="14" value="">
+24.<input type="text" name="14" value=""><br>
+25.<input type="text" name="14" value="">
+26.<input type="text" name="14" value="">
+27.<input type="text" name="14" value="">
+28.<input type="text" name="14" value="">
+29.<input type="text" name="14" value="">
+30.<input type="text" name="14" value=""><br>
+31.<input type="text" name="14" value=""-->
+
+
+</form> 
+{%endfor%}
+{%endfor%}
+
+{% endblock %}
